@@ -52,7 +52,7 @@ dependencies {
     endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation project(':mylibrary')
 
-    implementation 'com.google.android.gms:play-services-ads:17.1.2'
+    freeImplementation 'com.google.android.gms:play-services-ads:17.1.2'
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
