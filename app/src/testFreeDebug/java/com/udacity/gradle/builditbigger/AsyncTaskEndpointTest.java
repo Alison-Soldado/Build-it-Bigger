@@ -10,10 +10,9 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(AndroidJUnit4.class)
 public class AsyncTaskEndpointTest {
     @Test
-    public void testDoInBackground() throws Exception {
+    public void testDoInBackground() {
         MainActivityFragment fragment = new MainActivityFragment();
         new AsyncTaskEndpoint().execute(fragment);
-        Thread.sleep(10000);
-        assertNotNull("Error: Fetched Joke = " + fragment.joke_loaded, fragment.joke_loaded);
+        assertNotNull(fragment.joke_loaded);
     }
 }
